@@ -12,7 +12,7 @@ import {
   Description,
   FilePath,
   Sha,
-} from './primitive';
+} from './scalar';
 
 export * from './doc';
 export * from './errors';

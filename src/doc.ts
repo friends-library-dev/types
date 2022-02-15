@@ -1,4 +1,4 @@
-import { Uuid, ISBN, Sha, Url } from './primitive';
+import { Uuid, ISBN, Sha, Url } from './scalar';
 import { Lang, EditionType, Css, Html, Asciidoc, PrintSize } from '.';
 
 export interface DocPrecursor {
@@ -7,7 +7,7 @@ export interface DocPrecursor {
   friendInitials: string[];
   documentSlug: string;
   path: string;
-  documentId: Uuid;
+  editionId: Uuid;
   isCompilation: boolean;
   editionType: EditionType;
   asciidocFiles: Array<{
@@ -47,7 +47,7 @@ export function genericDpc(): DocPrecursor {
     friendInitials: [`G`, `F`],
     documentSlug: `journal`,
     path: `en/george-fox/journal/original`,
-    documentId: `9414033c-4b70-4b4b-8e48-fec037822173`,
+    editionId: `9414033c-4b70-4b4b-8e48-fec037822173`,
     isCompilation: false,
     editionType: `original`,
     asciidocFiles: [{ adoc: ``, filename: `01-journal.adoc` }],
