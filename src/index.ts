@@ -16,7 +16,6 @@ import {
 
 export * from './doc';
 export * from './errors';
-export * from './image-sizes';
 
 export type Environment = `production` | `staging` | `development`;
 
